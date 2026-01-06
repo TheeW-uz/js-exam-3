@@ -1,0 +1,969 @@
+@font-face {
+    font-family: "Satoshi";
+    src: url(./fonts/satoshi-webfont/Satoshi-Regular.woff);
+}
+
+@font-face {
+    font-family: "Integral";
+    src: url(./fonts/Integral-CF/Demo_Fonts/Fontspring-DEMO-integralcf-regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.discount {
+    width: 100%;
+    height: 38px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+
+    .discount-desc {
+        font-size: 14px;
+        font-weight: 400;
+        font-family: Satoshi;
+        color: white;
+        margin-left: 540px;
+    }
+
+    i {
+        margin-left: 420px;
+        cursor: pointer;
+    }
+}
+
+header {
+    width: 100%;
+    height: 96px;
+    display: flex;
+    align-items: center;
+
+    .header-title {
+        font-size: 32px;
+        font-weight: 700;
+        font-family: Integral;
+        margin-left: 100px;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            margin-left: 40px;
+            gap: 25px;
+            margin-top: 5px;
+
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-family: Satoshi;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    form {
+        width: 577px;
+        height: 48px;
+        margin-left: 40px;
+        border-radius: 62px;
+        background-color: #F0F0F0;
+        display: flex;
+        align-items: center;
+
+        i {
+            margin-left: 16px;
+            color: #00000066;
+        }
+
+        input {
+            border: none;
+            outline: none;
+            background-color: #F0F0F0;
+            padding-left: 12px;
+            width: 80%;
+        }
+    }
+}
+
+#bar {
+    display: none;
+}
+
+#sidebar {
+    display: none;
+}
+
+.hero {
+    width: 100%;
+    height: 663px;
+    background-image: url(./imgs/hero-main-img.png);
+    display: flex;
+
+    .hero-title {
+        font-size: 64px;
+        font-weight: 700;
+        font-family: Integral;
+        margin-top: 103px;
+        margin-left: 100px;
+        width: 577px;
+        line-height: 64px;
+    }
+
+    .hero__desc {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: Satoshi;
+        color: #00000099;
+        margin-top: 32px;
+        margin-left: 100px;
+        width: 545px;
+    }
+
+    .hero-btn {
+        width: 210px;
+        height: 52px;
+        margin-left: 100px;
+        margin-top: 32px;
+        background-color: black;
+        border: none;
+        border-radius: 62px;
+        color: white;
+        font-size: 16px;
+        font-family: Satoshi;
+    }
+
+    .big-number {
+        display: flex;
+        margin-left: 100px;
+        margin-top: 48px;
+        gap: 64px;
+
+        .numbers-number {
+            font-size: 40px;
+            font-weight: 700;
+            font-family: Satoshi;
+            color: black;
+        }
+
+        .numbers-letter {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: Satoshi;
+            color: #00000099;
+        }
+    }
+}
+
+.brands {
+    max-width: 1440px;
+    width: 100%;
+    height: 122px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 106px;
+
+    .brands-img-1 {
+        width: 166px;
+        height: 33px;
+        margin-left: 100px;
+    }
+}
+
+.arrivals-title {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: Integral;
+    color: #000000;
+    padding-top: 72px;
+    margin-left: 518px;
+}
+
+.selling-title {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: Integral;
+    color: #000000;
+    padding-top: 128px;
+    margin-left: 546px;
+}
+
+#arrivals-btn {
+    width: 218px;
+    height: 52px;
+    border-radius: 62px;
+    border: 1px solid #0000001A;
+    margin-top: 36px;
+    margin-left: 611px;
+    background-color: transparent;
+
+    font-family: Satoshi;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    cursor: pointer;
+
+    transition: all 0.3s;
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+#arrivals-btn:hover {
+    border-radius: 65px;
+    background-color: #0000001A;
+    color: black;
+}
+
+#arrivals-btn {
+    width: 218px;
+    height: 52px;
+    border-radius: 62px;
+    border: 1px solid #0000001A;
+    margin-top: 36px;
+    margin-left: 611px;
+    background-color: transparent;
+
+    font-family: Satoshi;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    cursor: pointer;
+
+    transition: all 0.3s;
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+#arrivals-btn:hover {
+    border-radius: 65px;
+    background-color: #0000001A;
+    color: black;
+}
+
+.style-section {
+    max-width: 1239px;
+    width: 100%;
+    height: 866px;
+    margin-left: 100px;
+    margin-top: 80px;
+    background-color: #F0F0F0;
+    border-radius: 40px;
+    text-align: center;
+
+    .style-title {
+        font-size: 48px;
+        font-weight: 700;
+        font-family: Integral;
+        padding-top: 70px;
+    }
+}
+
+.slider {
+    max-width: 1440px;
+    width: 100%;
+    margin-top: 80px;
+
+    .slider-title {
+        font-size: 48px;
+        font-weight: 700;
+        font-family: integral;
+        margin-left: 100px;
+    }
+
+    .slider-container {
+        margin-top: 40px;
+        margin-left: 100px;
+        display: flex;
+        gap: 20px;
+
+        .slider-box {
+            width: 400px;
+            height: 240px;
+            border-radius: 20px;
+            border: 1px solid #0000001A;
+            background-color: white;
+
+            .slider-box-title {
+                font-size: 20px;
+                font-weight: 700;
+                font-family: Satoshi;
+                color: black;
+            }
+
+            #icon-slider {
+                width: 24px;
+                height: 24px;
+                margin-left: 4px;
+                margin-top: 5px;
+            }
+
+            .slider__desc {
+                font-size: 16px;
+                font-weight: 400;
+                font-family: Satoshi;
+                color: #00000099;
+                margin-top: 12px;
+                margin-left: 32px;
+                width: 340px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+.log-in {
+    width: 1240px;
+    height: 180px;
+    margin-left: 100px;
+    margin-top: 80px;
+    background-color: #000000;
+    border-radius: 20px;
+    display: flex;
+
+    .log-in__desc {
+        .log-in-title {
+            font-size: 40px;
+            font-weight: 700;
+            width: 560px;
+            color: white;
+            margin-left: 64px;
+            padding-top: 43px;
+            font-family: Integral;
+        }
+    }
+
+    .log-in-form {
+        form {
+            margin-top: 36px;
+            margin-left: 212px;
+
+            #email-input {
+                width: 349px;
+                height: 48px;
+                border-radius: 62px;
+                border: none;
+                outline: none;
+                padding-left: 30px;
+
+                font-size: 16px;
+                font-weight: 400;
+                font-family: Satoshi;
+                color: #00000066;
+            }
+
+            .log-in-btn {
+                width: 349px;
+                height: 48px;
+                margin-top: 15px;
+                border-radius: 62px;
+                border: none;
+                background-color: white;
+
+                font-size: 16px;
+                font-weight: 500;
+                color: #000000;
+                font-family: Satoshi;
+            }
+        }
+    }
+}
+
+footer {
+    width: 1440px;
+    height: 310px;
+    background-color: #F0F0F0;
+    display: flex;
+
+    .footer-1 {
+        margin-top: 50px;
+        margin-left: 101px;
+
+        .footer-title {
+            font-size: 33.5px;
+            font-weight: 700;
+            font-family: Integral;
+            color: black;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            font-family: Satoshi;
+            margin-top: 25px;
+            width: 248px;
+            line-height: 22px;
+            color: #00000099;
+        }
+
+        div {
+            margin-top: 35px;
+            display: flex;
+            gap: 12px;
+
+            .icon-footer {
+                width: 28px;
+                height: 28px;
+            }
+        }
+    }
+
+    .footer-2 {
+        margin-left: 113px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+
+        h3 {
+            font-size: 16px;
+            font-weight: 500;
+            font-family: Satoshi;
+            color: #000000;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: Satoshi;
+            color: #00000099;
+            cursor: pointer;
+        }
+    }
+
+    .footer-3 {
+        margin-left: 113px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+
+        h3 {
+            font-size: 16px;
+            font-weight: 500;
+            font-family: Satoshi;
+            color: #000000;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: Satoshi;
+            color: #00000099;
+            cursor: pointer;
+        }
+    }
+
+    .footer-4 {
+        margin-left: 113px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+
+        h3 {
+            font-size: 16px;
+            font-weight: 500;
+            font-family: Satoshi;
+            color: #000000;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: Satoshi;
+            color: #00000099;
+            cursor: pointer;
+        }
+    }
+
+    .footer-5 {
+        margin-left: 113px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+
+        h3 {
+            font-size: 16px;
+            font-weight: 500;
+            font-family: Satoshi;
+            color: #000000;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: Satoshi;
+            color: #00000099;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    * {
+        box-sizing: border-box;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .container {
+        max-width: 390px;
+        width: 100%;
+    }
+
+    .discount {
+        width: 390px;
+        height: 34px;
+        padding-left: 12px !important;
+        font-size: 12px !important;
+    }
+
+    i {
+        margin-left: 10px;
+    }
+
+    header {
+        width: 100% !important;
+        height: 64px;
+        background-color: white;
+    }
+
+    #bar {
+        margin-left: 16px !important;
+    }
+
+    nav {
+        display: none !important;
+    }
+
+    form {
+        display: none !important;
+    }
+
+    .header-title {
+        margin-left: 16px !important;
+    }
+
+    .icons-header {
+        margin-left: 100px !important;
+    }
+
+    .hero {
+        max-width: 390px;
+        width: 100%;
+        height: 853px;
+
+        .hero-title {
+            font-size: 36px;
+            width: 315px;
+            font-weight: 700;
+            line-height: 34px;
+            margin-top: 40px !important;
+            margin-left: 16px !important;
+        }
+
+        .hero__desc {
+            font-size: 14px;
+            font-weight: 400;
+            width: 358px;
+            margin-top: 20px !important;
+            margin-left: 16px !important;
+        }
+
+        .hero-btn {
+            width: 358px;
+            height: 52px;
+            margin-top: 24px !important;
+            margin-left: 16px !important;
+        }
+
+        .big-number {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 55px;
+            margin-left: 56px !important;
+            margin-top: 22px !important;
+
+            .numbers-number {
+                font-size: 24px;
+            }
+
+            .numbers-letter {
+                font-size: 12px;
+            }
+        }
+
+        #numbers-3 {
+            margin-left: 90px !important;
+            margin-top: -50px !important;
+        }
+
+        #letters-3 {
+            margin-left: 90px !important;
+        }
+
+        .hero-img-2 {
+            display: flex !important;
+        }
+    }
+
+    .brands {
+        max-width: 390px !important;
+        width: 100%;
+        height: 146px !important;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 34px;
+
+        .brands-img-1 {
+            width: 116px !important;
+            height: 23px !important;
+            margin-top: 40px !important;
+        }
+
+        .brands-img-2 {
+            width: 63px !important;
+            height: 26px !important;
+            margin-top: 40px !important;
+        }
+
+        .brands-img-3 {
+            width: 109px !important;
+            height: 25px !important;
+            margin-top: 40px !important;
+        }
+
+        .brands-img-4 {
+            width: 127px !important;
+            height: 21px !important;
+            margin-top: -50px !important;
+            margin-left: 48px !important;
+        }
+
+        .brands-img-5 {
+            width: 134px !important;
+            height: 22px !important;
+            margin-top: -50px !important;
+        }
+    }
+
+    #arrivals-btn {
+        width: 358px !important;
+        height: 46px !important;
+        background-color: transparent;
+        margin-left: 16px !important;
+        margin-top: 24px !important;
+    }
+
+    #selling-btn {
+        width: 358px !important;
+        height: 46px !important;
+        background-color: transparent;
+        margin-left: 16px !important;
+        margin-top: 24px !important;
+    }
+
+    .style-section {
+        width: 358px !important;
+        height: 1020px !important;
+        margin-left: 16px !important;
+        margin-top: 50px !important;
+
+        .style-title {
+            font-size: 32px !important;
+            font-weight: 700 !important;
+            font-family: integral;
+            color: black;
+            margin-left: 56px !important;
+            padding-top: 40px !important;
+            width: 250px;
+        }
+
+        .style-box {
+            display: flex !important;
+            flex-direction: column !important;
+        }
+
+        .style-img-1 {
+            width: 310px !important;
+            height: 190px !important;
+            margin-left: 24px !important;
+            margin-top: 28px !important;
+        }
+
+        .style-img-2,
+        .style-img-3,
+        .style-img-4 {
+            width: 310px !important;
+            height: 190px !important;
+            margin-top: 16px !important;
+            margin-left: 24px !important;
+        }
+    }
+
+    .slider {
+        width: 390px !important;
+        display: flex;
+        flex-direction: column !important;
+
+        #slider-intro {
+            margin-top: 50px !important;
+
+            .slider-title {
+                font-size: 32px !important;
+                font-weight: 700 !important;
+                color: black;
+                width: 286px !important;
+                margin-left: 16px !important;
+            }
+
+            #slider-icon-1 {
+                margin-top: 50px !important;
+                margin-right: 16px !important;
+            }
+        }
+
+        .slider-container {
+            .slider-box {
+                width: 358px !important;
+                height: 186px !important;
+                border-radius: 20px !important;
+                margin-left: 16px !important;
+                margin-top: 24px !important;
+
+                img {
+                    width: 118px !important;
+                    height: 19px !important;
+                    margin-top: 24px !important;
+                    margin-left: 24px !important;
+                }
+
+                div {
+                    h3 {
+                        font-size: 16px !important;
+                        font-weight: 700 !important;
+                        margin-top: 8px !important;
+                        margin-left: 24px !important;
+                    }
+
+                    i {
+                        margin-top: 10px !important;
+                    }
+                }
+
+                .slider__desc {
+                    font-size: 14px !important;
+                    font-weight: 400 !important;
+                    margin-top: 8px !important;
+                    margin-left: 24px !important;
+                    width: 310px !important;
+                }
+            }
+
+            #slider-box-2,
+            #slider-box-3 {
+                display: none;
+            }
+        }
+    }
+
+    .log-in {
+        width: 358px !important;
+        height: 293px !important;
+        margin-top: 50px !important;
+        margin-left: 16px !important;
+
+        .log-in__desc {
+            .log-in-title {
+                font-size: 32px !important;
+                font-weight: 700 !important;
+                margin-top: 32px !important;
+                margin-left: 24px !important;
+                width: 300px !important;
+            }
+        }
+
+        .log-in-form {
+            form {
+                input {
+                    width: 311px !important;
+                    margin-left: 16px !important;
+                    margin-top: 32px !important;
+                    background-color: white !important;
+                }
+            }
+        }
+    }
+
+    footer {
+        width: 392px !important;
+        height: 690px !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+
+        .footer-1 {
+            .footer-title {
+                font-size: 28.85px !important;
+                font-weight: 700;
+                font-family: Integral;
+                margin-left: 17px !important;
+                margin-top: 32px !important;
+            }
+
+            p {
+                font-size: 14px !important;
+                font-weight: 400 !important;
+                margin-left: 18px !important;
+                margin-top: 14px !important;
+                width: 357px;
+                line-height: 20px !important;
+            }
+
+            div {
+                margin-top: 20px !important;
+                margin-left: 17px !important;
+            }
+        }
+
+        .footer-2 {
+            width: 100px !important;
+            margin-left: 17px !important;
+
+            h3 {
+                font-size: 14px !important;
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 14px !important;
+            }
+        }
+
+        .footer-3 {
+            width: 100px !important;
+            margin-left: 90px !important;
+
+            h3 {
+                font-size: 14px !important;
+            }
+
+            p {
+                font-size: 14px !important;
+                width: 150px !important;
+            }
+        }
+
+        .footer-4 {
+            width: 100px !important;
+            margin-left: 17px !important;
+            margin-top: -10px !important;
+
+            h3 {
+                font-size: 14px !important;
+            }
+
+            p {
+                font-size: 14px !important;
+                width: 150px !important;
+            }
+        }
+
+        .footer-5 {
+            width: 100px !important;
+            margin-left: 90px !important;
+            margin-top: -10px !important;
+
+            h3 {
+                font-size: 14px !important;
+            }
+
+            p {
+                font-size: 14px !important;
+                width: 150px !important;
+            }
+        }
+    }
+
+    #bar {
+        display: flex;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    #sidebar {
+        position: fixed;
+        top: 0;
+        left: -260px;
+        width: 260px;
+        height: 100vh;
+        background-color: #ffffff;
+        z-index: 9999;
+        transition: left 0.3s ease;
+        padding: 20px;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
+        display: block;
+    }
+
+    #sidebar.active {
+        left: 0;
+    }
+
+    #close-sidebar {
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .sidebar-nav {
+        list-style: none;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sidebar-nav a {
+        text-decoration: none;
+        font-family: Satoshi;
+        font-size: 18px;
+        color: black;
+    }
+}
+
+@media (max-width: 768px) {
+    #bar {
+        display: flex;
+    }
+
+    nav {
+        display: none !important;
+    }
+
+    input {
+        display: none;
+    }
+}

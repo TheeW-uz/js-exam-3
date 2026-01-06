@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="discount">
+            <p class="discount-desc">Sign up and get 20% off to your first order. <span style="
+                font-size: 14px;
+                font-family: Satoshi;
+                font-weight: 400;
+                text-decoration: underline;
+                opacity: 1;
+                margin-left: 5px;
+                ">Sign Up Now</span></p>
+
+            <i class="fa-solid fa-x" style="color: white;"></i>
+        </div>
+
+        <header>
+            <i id="bar" class="fa-solid fa-bars"></i>
+            <div id="sidebar">
+                <i id="close-sidebar" class="fa-solid fa-x"></i>
+
+                <ul class="sidebar-nav">
+                    <li><a href="./product.js">Shop</a></li>
+                    <li><a href="#">On Sale</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Brands</a></li>
+                </ul>
+            </div>
+
+            <p class="header-title">SHOP.CO</p>
+
+            <nav>
+                <ul>
+                    <li><a href="./product.html">Shop</a></li>
+                    <li><a href="#">On Sale</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Brands</a></li>
+                </ul>
+            </nav>
+
+            <form>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search for products...">
+
+            </form>
+
+            <div style="margin-left: 40px; display: flex;
+            gap: 14px;" class="icons-header">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-regular fa-circle-user"></i>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div id="hero-desc" style="display: flex;">
+                    <div class="hero-1">
+                        <img class="hero-img-1" src="./imgs/hero-img-1.png" alt="">
+                        <img class="hero-img-2" src="./imgs/hero-img-2.png" alt="">
+                        <img class="hero-img-3" src="./imgs/hero-img-3.png" alt="">
+                    </div>
+                    <div class="hero-2">
+                        <img class="hero-img-4" src="./imgs/hero-img-4.png" alt="">
+                    </div>
+                </div>
+                <div class="hero-3">
+                    <h1 class="hero-title">One Life Graphic T-shirt</h1>
+                    <div style="display: flex;">
+                        <img class="hero-grades" src="./imgs/hero-star-img.png" alt="">
+                        <p class="hero-rate">4.5/5</p>
+                    </div>
+                    <div style="display: flex;">
+                        <p class="hero-price">$260</p>
+                        <p class="hero-price-discount">$300</p>
+                        <div class="hero-red-discount">-40%</div>
+                    </div>
+
+                    <p class="hero__desc">This graphic t-shirt which is perfect for any occasion. Crafted from a soft
+                        and breathable fabric, it offers superior comfort and style.</p>
+
+                    <p id="select-colors" style="
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #00000099;
+                        margin-top: 24px;
+                        font-family: Satoshi;
+                    ">Select Colors</p>
+
+                    <div class="color-wrapper" style="display: flex; margin-top: 11px; gap: 16px;">
+                        <div data-img="./imgs/hero-img-4.png" data-price="260" data-old="300" data-discount="-40%"
+                            style="
+                            width: 37px;
+                            height: 37px;
+                            border-radius: 50%;
+                            background-color: #4F4631;
+                            cursor: pointer;
+                            "></div>
+                        <div data-img="./imgs/hero-img-5.png" data-price="240" data-old="280" data-discount="-35%"
+                            style="
+                            width: 37px;
+                            height: 37px;
+                            border-radius: 50%;
+                            background-color: #314F4A;
+                            cursor: pointer;
+                            "></div>
+                        <div data-img="./imgs/hero-img-6.png" data-price="220" data-old="260" data-discount="-30%"
+                            style="
+                            width: 37px;
+                            height: 37px;
+                            border-radius: 50%;
+                            background-color: #31344F;
+                            cursor: pointer;
+                            
+                            "></div>
+                    </div>
+
+                    <p id="choose-color" style="
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #00000099;
+                        margin-top: 24px;
+                        font-family: Satoshi;
+                    ">Choose Size</p>
+
+                    <div style="display: flex; margin-top: 16px; gap: 12px;">
+                        <div style="
+                                border-radius: 62px;
+                                background-color: #F0F0F0;
+
+                                font-size: 16px;
+                                font-weight: 400;
+                                font-family: Satoshi;
+                                color: #00000099;
+                                padding: 12px 24px;
+                                cursor: pointer;
+                            ">Small</div>
+
+                        <div style="
+                                border-radius: 62px;
+                                background-color: #F0F0F0;
+
+                                font-size: 16px;
+                                font-weight: 400;
+                                font-family: Satoshi;
+                                color: #00000099;
+                                padding: 12px 24px;
+                                cursor: pointer;
+                            ">Medium</div>
+
+                        <div style="
+                                border-radius: 62px;
+                                background-color: black;
+
+                                font-size: 16px;
+                                font-weight: 400;
+                                font-family: Satoshi;
+                                color: white;
+                                padding: 12px 24px;
+                                cursor: pointer;
+                            ">Large</div>
+
+                        <div style="
+                                border-radius: 62px;
+                                background-color: #F0F0F0;
+
+                                font-size: 16px;
+                                font-weight: 400;
+                                font-family: Satoshi;
+                                color: #00000099;
+                                padding: 12px 24px;
+                                cursor: pointer;
+                            ">X-Large</div>
+                    </div>
+
+                    <div id="purchase" style="display: flex; margin-top: 45px; gap: 20px;">
+                        <div style="
+                                width: 170px;
+                                height: 52px;
+                                border-radius: 62px;
+                                background-color: #F0F0F0;
+
+                                font-size: 16px;
+                                font-weight: 500;
+                                font-family: Satoshi;
+                                color: black;
+                                display: flex;
+                                gap: 38px;
+                                justify-content: center;
+                                align-items: center;
+                            ">
+                            <i class="fa-solid fa-minus"></i>
+                            <p>1</p><i class="fa-solid fa-plus"></i>
+                        </div>
+
+                        <div id="cart-btn" style="
+                            border-radius: 62px;
+                            background-color: black;
+
+                            font-size: 16px;
+                            font-weight: 500;
+                            font-family: Satoshi;
+                            color: white;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 15px 157px;
+                            cursor: pointer;
+                        ">
+                            Add to Cart
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reviews">
+                <div id="starting-reviews" style="display: flex; margin-left: 240px; gap: 270px;">
+                    <p class="review-title-1">Product Details</p>
+                    <p class="review-title-1">Rating & Reviews</p>
+                    <p class="review-title-1">FAQs</p>
+                </div>
+                <div class="reviews-extra">
+                    <p style="
+                        font-size: 24px;
+                        font-weight: 700;
+                        font-family: Satoshi;
+                        color: #000000;
+                        margin-left: 100px;
+                    ">All Reviews <span style="
+                            font-size: 16px;
+                            font-weight: 400;
+                            font-family: Satoshi;
+                            color: #00000099;
+                            margin-left: 8px;
+                        ">(451)</span></p>
+
+                    <div style="display: flex; gap: 10px;">
+                        <div id="sound-equilazer">
+                            <i class="fa-solid fa-sliders"></i>
+                        </div>
+                        <div class="latest">
+                            <p>Latest</p> <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <button class="write-review">
+                            Write a Review
+                        </button>
+                    </div>
+                </div>
+
+                <div class="review-1">
+                    <div class="review-box-1">
+                        <div class="img-box-review" style="display: flex;">
+                            <img style="
+                                width: 127px;
+                                height: 22.50px;
+                                margin-left: 32px;
+                                margin-top: 28px;
+                                " src="./imgs/hero-star-img.png" alt="">
+                            <i style="
+                                margin-left: 400px;
+                                margin-top: 32px;
+                                color: #00000066;
+                                font-size: 24px;
+                            " class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="review-name-box" style="display: flex;">
+                            <p class="review-box-name">Samantha D.</p><i class="fa-solid fa-circle-check"
+                                style="color: #04ff00; margin-left: 4px; font-size: 24px; margin-top: 20px;"></i>
+                        </div>
+                        <p class="review-box__desc">"I absolutely love this t-shirt! The design is unique and the fabric
+                            feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's
+                            become my favorite go-to shirt."</p>
+                        <p class="review-box-date">Posted on August 14, 2023</p>
+                    </div>
+
+                    <div class="review-box-2">
+                        <div class="img-box-review" style="display: flex;">
+                            <img style="
+                                width: 127px;
+                                height: 22.50px;
+                                margin-left: 32px;
+                                margin-top: 28px;
+                                " src="./imgs/hero-star-img.png" alt="">
+                            <i style="
+                                margin-left: 400px;
+                                margin-top: 32px;
+                                color: #00000066;
+                                font-size: 24px;
+                            " class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="review-name-box" style="display: flex;">
+                            <p class="review-box-name">Alex M.</p><i class="fa-solid fa-circle-check"
+                                style="color: #04ff00; margin-left: 4px; font-size: 24px; margin-top: 20px;"></i>
+                        </div>
+                        <p class="review-box__desc">"The t-shirt exceeded my expectations! The colors are vibrant and
+                            the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about
+                            aesthetics, and this t-shirt definitely gets a thumbs up from me."</p>
+                        <p class="review-box-date">Posted on August 15, 2023</p>
+                    </div>
+                </div>
+
+                <div class="review-2">
+                    <div class="review-box-3">
+                        <div class="img-box-review" style="display: flex;">
+                            <img style="
+                                width: 127px;
+                                height: 22.50px;
+                                margin-left: 32px;
+                                margin-top: 28px;
+                                " src="./imgs/hero-star-img.png" alt="">
+                            <i style="
+                                margin-left: 400px;
+                                margin-top: 32px;
+                                color: #00000066;
+                                font-size: 24px;
+                            " class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="review-name-box" style="display: flex;">
+                            <p class="review-box-name">Ethan R.</p><i class="fa-solid fa-circle-check"
+                                style="color: #04ff00; margin-left: 4px; font-size: 24px; margin-top: 20px;"></i>
+                        </div>
+                        <p class="review-box__desc">"This t-shirt is a must-have for anyone who appreciates good design.
+                            The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the
+                            designer's touch in every aspect of this shirt."</p>
+                        <p class="review-box-date">Posted on August 16, 2023</p>
+                    </div>
+
+                    <div class="review-box-4">
+                        <div class="img-box-review" style="display: flex;">
+                            <img style="
+                                width: 127px;
+                                height: 22.50px;
+                                margin-left: 32px;
+                                margin-top: 28px;
+                                " src="./imgs/hero-star-img.png" alt="">
+                            <i style="
+                                margin-left: 400px;
+                                margin-top: 32px;
+                                color: #00000066;
+                                font-size: 24px;
+                            " class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="review-name-box" style="display: flex;">
+                            <p class="review-box-name">Olivia P.</p><i class="fa-solid fa-circle-check"
+                                style="color: #04ff00; margin-left: 4px; font-size: 24px; margin-top: 20px;"></i>
+                        </div>
+                        <p class="review-box__desc">"As a UI/UX enthusiast, I value simplicity and functionality. This
+                            t-shirt not only represents those principles but also feels great to wear. It's evident that
+                            the designer poured their creativity into making this t-shirt stand out."</p>
+                        <p class="review-box-date">Posted on August 17, 2023</p>
+                    </div>
+                </div>
+
+                <div class="review-3">
+                    <div class="review-box-5">
+                        <div class="img-box-review" style="display: flex;">
+                            <img style="
+                                width: 127px;
+                                height: 22.50px;
+                                margin-left: 32px;
+                                margin-top: 28px;
+                                " src="./imgs/hero-star-img.png" alt="">
+                            <i style="
+                                margin-left: 400px;
+                                margin-top: 32px;
+                                color: #00000066;
+                                font-size: 24px;
+                            " class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="review-name-box" style="display: flex;">
+                            <p class="review-box-name">Liam K.</p><i class="fa-solid fa-circle-check"
+                                style="color: #04ff00; margin-left: 4px; font-size: 24px; margin-top: 20px;"></i>
+                        </div>
+                        <p class="review-box__desc">"This t-shirt is a fusion of comfort and creativity. The fabric is
+                            soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of
+                            art that reflects my passion for both design and fashion."</p>
+                        <p class="review-box-date">Posted on August 18, 2023</p>
+                    </div>
+
+                    <div class="review-box-6">
+                        <div class="img-box-review" style="display: flex;">
+                            <img style="
+                                width: 127px;
+                                height: 22.50px;
+                                margin-left: 32px;
+                                margin-top: 28px;
+                                " src="./imgs/hero-star-img.png" alt="">
+                            <i style="
+                                margin-left: 400px;
+                                margin-top: 32px;
+                                color: #00000066;
+                                font-size: 24px;
+                            " class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="review-name-box" style="display: flex;">
+                            <p class="review-box-name">Ava H.</p><i class="fa-solid fa-circle-check"
+                                style="color: #04ff00; margin-left: 4px; font-size: 24px; margin-top: 20px;"></i>
+                        </div>
+                        <p class="review-box__desc">"I'm not just wearing a t-shirt; I'm wearing a piece of design
+                            philosophy. The intricate details and thoughtful layout of the design make this shirt a
+                            conversation starter."</p>
+                        <p class="review-box-date">Posted on August 19, 2023</p>
+                    </div>
+                </div>
+            </section>
+
+            <button id="load-btn">Load More Reviews</button>
+
+            <h1 id="your-choice-title">YOU MIGHT ALSO LIKE</h1>
+
+            <section class="your-choice">
+                <div class="choice-box-1">
+                    <img class="choice-img" src="./imgs/your-choice-img-1.png" alt="">
+                    <p class="choice-name">Polo with Contrast Trims</p>
+                    <img class="choice-star" src="./imgs/hero-star-img.png" alt="">
+                    <p class="choice-price">$212</p>
+                </div>
+
+                <div class="choice-box-2">
+                    <img class="choice-img" src="./imgs/your-choice-img-2.png" alt="">
+                    <p class="choice-name">Gradient Graphic T-shirt</p>
+                    <img class="choice-star" src="./imgs/hero-star-img.png" alt="">
+                    <p class="choice-price">$145</p>
+                </div>
+
+                <div class="choice-box-3">
+                    <img class="choice-img" src="./imgs/your-choice-img-3.png" alt="">
+                    <p class="choice-name">Polo with Tipping Details</p>
+                    <img class="choice-star" src="./imgs/hero-star-img.png" alt="">
+                    <p class="choice-price">$180</p>
+                </div>
+
+                <div class="choice-box-4">
+                    <img class="choice-img" src="./imgs/your-choice-img-4.png" alt="">
+                    <p class="choice-name">Black Striped T-shirt</p>
+                    <img class="choice-star" src="./imgs/hero-star-img.png" alt="">
+                    <p class="choice-price">$120</p>
+                </div>
+            </section>
+        </main>
+
+        <div class="log-in">
+            <div class="log-in__desc">
+                <p class="log-in-title">STAY UPTO DATE ABOUT OUR LATEST OFFERS</p>
+            </div>
+            <div class="log-in-form">
+                <form>
+                    <input id="email-input" type="email" placeholder="Enter your email address">
+                    <button class="log-in-btn">Subscribe to Newsletter</button>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <footer>
+                <div class="footer-1">
+                    <h1 class="footer-title">
+                        SHOP.CO
+                    </h1>
+                    <p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+                    <div style="display: flex;">
+                        <i id="icon-footer" class="fa-brands fa-twitter"></i>
+                        <i id="icon-footer" class="fa-brands fa-facebook"></i>
+                        <i id="icon-footer" class="fa-brands fa-square-instagram"></i>
+                        <i id="icon-footer" class="fa-brands fa-github"></i>
+                    </div>
+
+                </div>
+
+                <div class="footer-2">
+                    <h3>COMPANY</h3>
+                    <p>About</p>
+                    <p>Features</p>
+                    <p>Works</p>
+                    <p>Career</p>
+                </div>
+
+                <div class="footer-3">
+                    <h3>HELP</h3>
+                    <p>Customer Support</p>
+                    <p>Delivery Details</p>
+                    <p>Terms & Conditions</p>
+                    <p>Privacy Policy</p>
+                </div>
+
+                <div class="footer-4">
+                    <h3>FAQ</h3>
+                    <p>Account</p>
+                    <p>manage Deliveries</p>
+                    <p>Orders</p>
+                    <p>Payments</p>
+                </div>
+
+                <div class="footer-5">
+                    <h3>RECOURCES</h3>
+                    <p>Free eBooks</p>
+                    <p>Development Tutorial</p>
+                    <p>How to - Blog</p>
+                    <p>YouTube Playlist</p>
+                </div>
+            </footer>
+    </div>
+
+    <script src="./product.js"></script>
+</body>
+
+</html>

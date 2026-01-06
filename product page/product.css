@@ -1,0 +1,1280 @@
+@font-face {
+    font-family: "Satoshi";
+    src: url(../fonts/satoshi-webfont/Satoshi-Regular.woff);
+}
+
+@font-face {
+    font-family: "Integral";
+    src: url(../fonts/Integral-CF/Demo_Fonts/Fontspring-DEMO-integralcf-regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.discount {
+    width: 100%;
+    height: 38px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+
+    .discount-desc {
+        font-size: 14px;
+        font-weight: 400;
+        font-family: Satoshi;
+        color: white;
+        margin-left: 540px;
+    }
+
+    i {
+        margin-left: 420px;
+        cursor: pointer;
+    }
+}
+
+header {
+    width: 100%;
+    height: 96px;
+    display: flex;
+    align-items: center;
+
+    #bar,
+    #sidebar {
+        display: none;
+    }
+
+    .header-title {
+        font-size: 32px;
+        font-weight: 700;
+        font-family: Integral;
+        margin-left: 100px;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            margin-left: 40px;
+            gap: 25px;
+            margin-top: 5px;
+
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-family: Satoshi;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    form {
+        width: 577px;
+        height: 48px;
+        margin-left: 40px;
+        border-radius: 62px;
+        background-color: #F0F0F0;
+        display: flex;
+        align-items: center;
+
+        i {
+            margin-left: 16px;
+            color: #00000066;
+        }
+
+        input {
+            border: none;
+            outline: none;
+            background-color: #F0F0F0;
+            padding-left: 12px;
+            width: 80%;
+        }
+    }
+}
+
+.hero {
+    margin-top: 36px;
+    margin-left: 100px;
+    display: flex;
+
+    .hero-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        img {
+            width: 152px;
+            height: 167px;
+        }
+    }
+
+    .hero-2 {
+        margin-left: 14px;
+
+        img {
+            width: 444px;
+            height: 530px;
+        }
+    }
+
+    .hero-3 {
+        margin-left: 40px;
+
+        .hero-title {
+            font-size: 40px;
+            font-weight: 700;
+            font-family: Integral;
+            color: black;
+        }
+
+        div {
+            margin-top: 14px;
+
+            .hero-grades {
+                width: 139px;
+                height: 25px;
+            }
+
+            .hero-rate {
+                font-size: 16px;
+                font-weight: 400;
+                font-family: Satoshi;
+                margin-top: 2px;
+                margin-left: 16px;
+            }
+        }
+
+        div {
+            margin-top: 14px;
+            gap: 12px;
+
+            .hero-price {
+                font-size: 32px;
+                font-weight: 700;
+                font-family: Satoshi;
+            }
+
+            .hero-price-discount {
+                font-size: 32px;
+                font-weight: 700;
+                font-family: Satoshi;
+                color: #0000004D;
+            }
+
+            .hero-red-discount {
+                width: 72px;
+                height: 34px;
+                border-radius: 62px;
+                background-color: #FF33331A;
+
+                font-size: 16px;
+                font-weight: 500;
+                font-family: Satoshi;
+                text-align: center;
+                justify-content: center;
+                display: flex;
+                color: #FF3333;
+                margin-top: 5px;
+                padding-top: 3px;
+            }
+        }
+
+        .hero__desc {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: Satoshi;
+            color: #00000099;
+            line-height: 22px;
+            margin-top: 20px;
+            width: 590px;
+        }
+    }
+}
+
+.reviews {
+    #starting-reviews {
+        margin-top: 80px;
+
+        p:first-child,
+        :last-child {
+            font-size: 20px;
+            font-weight: 400;
+            color: #00000099;
+            font-family: Satoshi;
+        }
+
+        p:nth-child(2) {
+            color: #000000;
+            font-family: Satoshi;
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+
+    .reviews-extra {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+
+        #sound-equilazer {
+            width: 48px;
+            height: 48px;
+            border-radius: 62px;
+            background-color: #F0F0F0;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .latest {
+            width: 120px;
+            height: 48px;
+            border-radius: 62px;
+            background-color: #F0F0F0;
+            color: black;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            font-size: 16px;
+            font-weight: 500;
+            font-family: Satoshi;
+            color: #000000;
+        }
+
+        .write-review {
+            width: 166px;
+            height: 48px;
+            border-radius: 62px;
+            color: #000000;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: Satoshi;
+            border: none;
+            background-color: black;
+            color: white;
+        }
+    }
+
+    .review-1 {
+        display: flex;
+        gap: 20px;
+        margin-top: 32px;
+        margin-left: 100px;
+
+        .review-box-1,
+        .review-box-2 {
+            width: 610px;
+            height: 241px;
+            border-radius: 20px;
+            border: 1px solid #0000001A;
+
+            .review-box-name {
+                font-size: 20px;
+                font-weight: 700;
+                font-family: Satoshi;
+                color: #000000;
+                margin-left: 32px;
+                margin-top: 19px;
+            }
+
+            .review-box__desc {
+                font-size: 16px;
+                font-weight: 400;
+                font-family: Satoshi;
+                color: #00000099;
+                margin-left: 32px;
+                margin-top: 12px;
+                line-height: 22px;
+                width: 522px;
+            }
+
+            .review-box-date {
+                font-size: 16px;
+                font-weight: 500;
+                font-family: Satoshi;
+                color: #00000099;
+                margin-top: 24px;
+                margin-left: 32px;
+            }
+        }
+    }
+
+    .review-2 {
+        display: flex;
+        gap: 20px;
+        margin-top: 32px;
+        margin-left: 100px;
+
+        .review-box-3,
+        .review-box-4 {
+            width: 610px;
+            height: 241px;
+            border-radius: 20px;
+            border: 1px solid #0000001A;
+
+            .review-box-name {
+                font-size: 20px;
+                font-weight: 700;
+                font-family: Satoshi;
+                color: #000000;
+                margin-left: 32px;
+                margin-top: 19px;
+            }
+
+            .review-box__desc {
+                font-size: 16px;
+                font-weight: 400;
+                font-family: Satoshi;
+                color: #00000099;
+                margin-left: 32px;
+                margin-top: 12px;
+                line-height: 22px;
+                width: 522px;
+            }
+
+            .review-box-date {
+                font-size: 16px;
+                font-weight: 500;
+                font-family: Satoshi;
+                color: #00000099;
+                margin-top: 24px;
+                margin-left: 32px;
+            }
+        }
+    }
+
+    .review-3 {
+        display: flex;
+        gap: 20px;
+        margin-top: 32px;
+        margin-left: 100px;
+
+        .review-box-5,
+        .review-box-6 {
+            width: 610px;
+            height: 241px;
+            border-radius: 20px;
+            border: 1px solid #0000001A;
+
+            .review-box-name {
+                font-size: 20px;
+                font-weight: 700;
+                font-family: Satoshi;
+                color: #000000;
+                margin-left: 32px;
+                margin-top: 19px;
+            }
+
+            .review-box__desc {
+                font-size: 16px;
+                font-weight: 400;
+                font-family: Satoshi;
+                color: #00000099;
+                margin-left: 32px;
+                margin-top: 12px;
+                line-height: 22px;
+                width: 522px;
+            }
+
+            .review-box-date {
+                font-size: 16px;
+                font-weight: 500;
+                font-family: Satoshi;
+                color: #00000099;
+                margin-top: 24px;
+                margin-left: 32px;
+            }
+        }
+    }
+}
+
+#load-btn {
+    width: 230px;
+    height: 52px;
+    border-radius: 62px;
+    margin-top: 36px;
+    margin-left: 605px;
+    background-color: transparent;
+    border: 1px solid #0000001A;
+
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Satoshi;
+    color: black;
+
+    transition: all 0.3s;
+}
+
+#load-btn:hover {
+    background-color: #0000009f;
+    color: white;
+    border-radius: 66px;
+    border: none;
+    cursor: pointer;
+}
+
+#your-choice-title {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: Integral;
+    color: black;
+    margin-top: 64px;
+    margin-left: 440px;
+}
+
+.your-choice {
+    display: flex;
+    margin-left: 100px;
+    margin-top: 55px;
+    gap: 20px;
+
+    .choice-box-1,
+    .choice-box-2,
+    .choice-box-3,
+    .choice-box-4 {
+        .choice-img {
+            width: 295px;
+            height: 298px;
+        }
+
+        .choice-name {
+            font-size: 20px;
+            font-weight: 700;
+            font-family: Satoshi;
+            color: black;
+            margin-top: 16px;
+        }
+
+        .choice-star {
+            margin-top: 8px;
+            width: 137px;
+            height: 19px;
+        }
+
+        .choice-price {
+            font-size: 24px;
+            font-weight: 700;
+            font-family: Satoshi;
+            margin-top: 8px;
+        }
+    }
+}
+
+.log-in {
+    width: 1240px;
+    height: 180px;
+    margin-left: 100px;
+    margin-top: 80px;
+    background-color: #000000;
+    border-radius: 20px;
+    display: flex;
+
+    .log-in__desc {
+        .log-in-title {
+            font-size: 40px;
+            font-weight: 700;
+            width: 560px;
+            color: white;
+            margin-left: 64px;
+            padding-top: 43px;
+            font-family: Integral;
+        }
+    }
+
+    .log-in-form {
+        form {
+            margin-top: 36px;
+            margin-left: 212px;
+
+            #email-input {
+                width: 349px;
+                height: 48px;
+                border-radius: 62px;
+                border: none;
+                outline: none;
+                padding-left: 30px;
+
+                font-size: 16px;
+                font-weight: 400;
+                font-family: Satoshi;
+                color: #00000066;
+            }
+
+            .log-in-btn {
+                width: 349px;
+                height: 48px;
+                margin-top: 15px;
+                border-radius: 62px;
+                border: none;
+                background-color: white;
+
+                font-size: 16px;
+                font-weight: 500;
+                color: #000000;
+                font-family: Satoshi;
+            }
+        }
+    }
+}
+
+footer {
+    max-width: 1440px;
+    width: 100%;
+    height: 310px;
+    background-color: #F0F0F0;
+    display: flex;
+
+    .footer-1 {
+        margin-top: 50px;
+        margin-left: 101px;
+
+        .footer-title {
+            font-size: 33.5px;
+            font-weight: 700;
+            font-family: Integral;
+            color: black;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            font-family: Satoshi;
+            margin-top: 25px;
+            width: 248px;
+            line-height: 22px;
+            color: #00000099;
+        }
+
+        div {
+            margin-top: 35px;
+            display: flex;
+            gap: 12px;
+
+            .icon-footer {
+                width: 28px;
+                height: 28px;
+            }
+        }
+    }
+
+    .footer-2 {
+        margin-left: 113px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+
+        h3 {
+            font-size: 16px;
+            font-weight: 500;
+            font-family: Satoshi;
+            color: #000000;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: Satoshi;
+            color: #00000099;
+            cursor: pointer;
+        }
+    }
+
+    .footer-3 {
+        margin-left: 113px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+
+        h3 {
+            font-size: 16px;
+            font-weight: 500;
+            font-family: Satoshi;
+            color: #000000;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: Satoshi;
+            color: #00000099;
+            cursor: pointer;
+        }
+    }
+
+    .footer-4 {
+        margin-left: 113px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+
+        h3 {
+            font-size: 16px;
+            font-weight: 500;
+            font-family: Satoshi;
+            color: #000000;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: Satoshi;
+            color: #00000099;
+            cursor: pointer;
+        }
+    }
+
+    .footer-5 {
+        margin-left: 113px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+
+        h3 {
+            font-size: 16px;
+            font-weight: 500;
+            font-family: Satoshi;
+            color: #000000;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: Satoshi;
+            color: #00000099;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    * {
+        box-sizing: border-box;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .container {
+        max-width: 390px;
+        width: 100%;
+    }
+
+    .discount {
+        width: 390px;
+        height: 34px;
+        padding-left: 12px !important;
+        font-size: 12px !important;
+    }
+
+    i {
+        margin-left: 10px;
+    }
+
+    header {
+        width: 100% !important;
+        height: 64px;
+        background-color: white;
+    }
+
+    #bar {
+        margin-left: 16px !important;
+    }
+
+    nav {
+        display: none !important;
+    }
+
+    form {
+        display: none !important;
+    }
+
+    .header-title {
+        margin-left: 16px !important;
+    }
+
+    .icons-header {
+        margin-left: 100px !important;
+    }
+
+    .hero {
+        display: flex;
+        flex-wrap: wrap;
+
+        #hero-desc {
+            display: flex;
+            flex-direction: column-reverse;
+
+            .hero-img-4 {
+                width: 340px !important;
+                height: 310px !important;
+                margin-left: 25px !important;
+                margin-top: 20px !important;
+            }
+
+            .hero-1 {
+                display: flex !important;
+                flex-direction: row !important;
+                gap: 12px !important;
+                margin-top: 12px !important;
+
+                .hero-img-1 {
+                    width: 111px;
+                    height: 106px;
+                    margin-left: 16px !important;
+                }
+
+                .hero-img-2 {
+                    width: 112px;
+                    height: 106px;
+                }
+
+                .hero-img-3 {
+                    width: 111px;
+                    height: 106px;
+                }
+            }
+        }
+
+        .hero-3 {
+            margin-left: 16px !important;
+            margin-top: 20px !important;
+
+            .hero-title {
+                font-size: 24px;
+                font-weight: 700;
+                width: 267px !important;
+            }
+
+            div {
+                margin-top: 12px !important;
+
+                .hero-grades {
+                    width: 105px;
+                    height: 18.67px;
+                }
+            }
+
+            div {
+                .hero-price {
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+
+                .hero-price-discount {
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+
+                .hero-red-discount {
+                    width: 62px;
+                    height: 31px;
+                    margin-top: 0px !important;
+                    padding-top: 3px !important;
+                }
+            }
+
+            .hero__desc {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                margin-top: 15px !important;
+                width: 358px !important;
+            }
+
+            #select-colors {
+                font-size: 14px;
+                font-weight: 400;
+                margin-top: 25px !important;
+            }
+
+            .color-wrapper {
+                margin-top: 0 !important;
+            }
+
+            #choose-color {
+                margin-top: 20px !important;
+            }
+
+            div {
+                div:first-child {
+                    width: 74px;
+                    height: 39px;
+                }
+
+                div:nth-child(2) {
+                    width: 90px;
+                    height: 39px;
+                }
+
+                div:nth-child(3) {
+                    width: 76px;
+                    height: 39px;
+                }
+
+                div:last-child {
+                    width: 89px;
+                    height: 39px;
+                }
+
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            #purchase {
+                div:first-child {
+                    width: 110px !important;
+                    height: 44px !important;
+                    gap: 16px !important;
+                }
+
+                div:last-child {
+                    width: 236px;
+                    height: 44px;
+                }
+            }
+        }
+    }
+
+    #bar,
+    #sidebar {
+        display: flex !important;
+    }
+
+    .reviews {
+        #starting-reviews {
+            gap: 45px !important;
+            display: flex;
+            margin-top: 50px !important;
+
+            p:first-child {
+                margin-left: 16px !important;
+            }
+
+            .review-title-1 {
+                font-size: 16px !important;
+                font-weight: 400 !important;
+            }
+        }
+
+        .reviews-extra {
+
+            margin-top: 26px !important;
+            margin-left: 16px !important;
+
+            p {
+                font-size: 20px !important;
+                font-weight: 700 !important;
+                margin-left: 16px;
+            }
+
+            .latest {
+                display: none;
+            }
+
+            #sound-equilazer {
+                width: 40px;
+                height: 40px;
+            }
+
+            .write-review {
+                width: 113px;
+                height: 40px;
+
+                font-size: 12px;
+                margin-right: 16px !important;
+            }
+        }
+
+        .review-1 {
+            margin-top: 20px !important;
+            display: flex;
+            flex-direction: column;
+
+            .review-box-1,
+            .review-box-2 {
+                width: 358px;
+                height: 224px;
+                border-radius: 20px;
+                margin-left: 16px !important;
+
+                .img-box-review {
+                    display: flex;
+                    flex-direction: column;
+
+                    img {
+                        width: 107px;
+                        height: 19px;
+                        margin-left: 24px !important;
+                        margin-top: 24px !important;
+                    }
+
+                    i {
+                        display: none;
+                    }
+                }
+
+                .review-name-box {
+                    .review-box-name {
+                        margin-left: 24px !important;
+                        margin-top: 15px !important;
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+
+                    i {
+                        font-size: 19px !important;
+                        margin-top: 15px !important;
+                        margin-left: 4px !important;
+                    }
+                }
+
+                .review-box__desc {
+                    font-size: 14px !important;
+                    font-weight: 400;
+                    margin-top: 8px !important;
+                    margin-left: 24px !important;
+                    line-height: 20px;
+                    width: 310px;
+                }
+
+                .review-box-date {
+                    font-size: 14px !important;
+                    margin-top: 10px !important;
+                    margin-left: 24px !important;
+                }
+            }
+        }
+
+        .review-2 {
+            margin-top: 20px !important;
+            display: flex;
+            flex-direction: column;
+
+            .review-box-4 {
+                display: none;
+            }
+
+            .review-box-3 {
+                width: 358px;
+                height: 224px;
+                border-radius: 20px;
+                margin-left: 16px !important;
+
+                .img-box-review {
+                    display: flex;
+                    flex-direction: column;
+
+                    img {
+                        width: 107px;
+                        height: 19px;
+                        margin-left: 24px !important;
+                        margin-top: 24px !important;
+                    }
+
+                    i {
+                        display: none;
+                    }
+                }
+
+                .review-name-box {
+                    .review-box-name {
+                        margin-left: 24px !important;
+                        margin-top: 15px !important;
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+
+                    i {
+                        font-size: 19px !important;
+                        margin-top: 15px !important;
+                        margin-left: 4px !important;
+                    }
+                }
+
+                .review-box__desc {
+                    font-size: 14px !important;
+                    font-weight: 400;
+                    margin-top: 8px !important;
+                    margin-left: 24px !important;
+                    line-height: 20px;
+                    width: 310px;
+                }
+
+                .review-box-date {
+                    font-size: 14px !important;
+                    margin-top: 10px !important;
+                    margin-left: 24px !important;
+                }
+            }
+        }
+
+        .review-3 {
+            display: none;
+        }
+    }
+
+    #load-btn {
+        width: 195px;
+        height: 47px;
+        margin-top: 20px !important;
+        margin-left: 98px !important;
+
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    #your-choice-title {
+        font-size: 32px;
+        font-weight: 700;
+        margin-top: 50px !important;
+        width: 284px;
+        line-height: 36px;
+        margin-left: 55px !important;
+        text-align: center;
+    }
+
+    .your-choice {
+        display: flex;
+        flex-direction: column;
+
+        .choice-box-1 {
+            margin-top: 20px !important;
+        }
+
+        .choice-box-1,
+        .choice-box-2 {
+            .choice-img {
+                width: 198px;
+                height: 200px;
+                margin-left: 100px !important;
+            }
+
+            .choice-name {
+                font-size: 16px;
+                font-weight: 700;
+                font-family: Satoshi;
+                margin-left: 100px !important;
+                margin-top: 10px !important;
+            }
+
+            .choice-star {
+                width: 117px;
+                height: 16px;
+                margin-left: 100px !important;
+                margin-top: 4px !important;
+            }
+
+            .choice-price {
+                font-size: 20px;
+                font-weight: 700;
+                margin-left: 100px !important;
+                margin-top: 4px !important;
+            }
+        }
+
+        .choice-box-3,
+        .choice-box-4 {
+            display: none;
+        }
+    }
+
+    .log-in {
+        width: 358px !important;
+        height: 293px !important;
+        margin-top: 50px !important;
+        margin-left: 16px !important;
+
+        .log-in__desc {
+            .log-in-title {
+                font-size: 32px !important;
+                font-weight: 700 !important;
+                margin-top: 32px !important;
+                margin-left: 24px !important;
+                width: 300px !important;
+            }
+        }
+
+        .log-in-form {
+            form {
+                input {
+                    width: 311px !important;
+                    margin-left: 16px !important;
+                    margin-top: 32px !important;
+                    background-color: white !important;
+                }
+            }
+        }
+    }
+
+    footer {
+        width: 392px !important;
+        height: 690px !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+
+        .footer-1 {
+            .footer-title {
+                font-size: 28.85px !important;
+                font-weight: 700;
+                font-family: Integral;
+                margin-left: 17px !important;
+                margin-top: 32px !important;
+            }
+
+            p {
+                font-size: 14px !important;
+                font-weight: 400 !important;
+                margin-left: 18px !important;
+                margin-top: 14px !important;
+                width: 357px;
+                line-height: 20px !important;
+            }
+
+            div {
+                margin-top: 20px !important;
+                margin-left: 17px !important;
+            }
+        }
+
+        .footer-2 {
+            width: 100px !important;
+            margin-left: 17px !important;
+
+            h3 {
+                font-size: 14px !important;
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 14px !important;
+            }
+        }
+
+        .footer-3 {
+            width: 100px !important;
+            margin-left: 90px !important;
+
+            h3 {
+                font-size: 14px !important;
+            }
+
+            p {
+                font-size: 14px !important;
+                width: 150px !important;
+            }
+        }
+
+        .footer-4 {
+            width: 100px !important;
+            margin-left: 17px !important;
+            margin-top: -10px !important;
+
+            h3 {
+                font-size: 14px !important;
+            }
+
+            p {
+                font-size: 14px !important;
+                width: 150px !important;
+            }
+        }
+
+        .footer-5 {
+            width: 100px !important;
+            margin-left: 90px !important;
+            margin-top: -10px !important;
+
+            h3 {
+                font-size: 14px !important;
+            }
+
+            p {
+                font-size: 14px !important;
+                width: 150px !important;
+            }
+        }
+    }
+
+    #bar {
+        display: flex;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    #sidebar {
+        position: fixed;
+        top: 0;
+        left: -260px;
+        width: 260px;
+        height: 100vh;
+        background-color: #ffffff;
+        z-index: 9999;
+        transition: left 0.3s ease;
+        padding: 20px;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
+        display: block;
+    }
+
+    #sidebar.active {
+        left: 0;
+    }
+
+    #close-sidebar {
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .sidebar-nav {
+        list-style: none;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sidebar-nav a {
+        text-decoration: none;
+        font-family: Satoshi;
+        font-size: 18px;
+        color: black;
+    }
+}
+
+@media (max-width: 768px) {
+    #bar {
+        display: flex;
+    }
+
+    nav {
+        display: none !important;
+    }
+
+    input {
+        display: none;
+    }
+}
