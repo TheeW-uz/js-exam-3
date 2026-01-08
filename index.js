@@ -244,9 +244,7 @@ function applyMobileStyles() {
         });
     }
 }
-
 applyMobileStyles();
-
 window.addEventListener("resize", applyMobileStyles);
 
 

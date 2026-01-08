@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./category.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="discount">
+            <p class="discount-desc">Sign up and get 20% off to your first order. <span style="
+                font-size: 14px;
+                font-family: Satoshi;
+                font-weight: 400;
+                text-decoration: underline;
+                opacity: 1;
+                margin-left: 5px;
+                ">Sign Up Now</span></p>
+
+            <i class="fa-solid fa-x" style="color: white;"></i>
+        </div>
+
+        <header>
+            <div id="mobile-filter">
+                <div class="mobile-filter-header">
+                    <h2>Filters</h2>
+                    <i id="close-mobile-filter" class="fa-solid fa-x"></i>
+                </div>
+
+                <div class="hero-filter mobile">
+                    <div class="hero-title">
+                        <h2 class="filter-name">Filters</h2>
+                        <i class="fa-solid fa-up-down"></i>
+                    </div>
+
+                    <div class="t-shorts-title">
+                        <h2 class="t-shorts-name">T-shirts</h2>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <div class="Shorts-title">
+                        <h2 class="Shorts-name">Shorts</h2>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <div class="Shirts-title">
+                        <h2 class="Shirts-name">Shirts</h2>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <div class="Hoodie-title">
+                        <h2 class="Hoodie-name">Hoodie</h2>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <div class="Jeans-title">
+                        <h2 class="Jeans-name">Jeans</h2>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <div class="Price-title">
+                        <h2 class="Price-name">Price</h2>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+
+                    <div class="price-slider">
+                        <div class="track"></div>
+                        <div class="range"></div>
+
+                        <div class="thumb left"></div>
+                        <div class="thumb right"></div>
+
+                        <div class="prices">
+                            <span>$50</span>
+                            <span>$200</span>
+                        </div>
+                    </div>
+
+                    <div class="colors-title">
+                        <h2 class="colors-name">Colors</h2>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+
+                    <div class="colors-main">
+                        <div class="colors-1">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+
+                        <div class="colors-2">
+                            <div><i class="fa-solid fa-check"></i></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div class="size-title">
+                        <h2 class="size-name">Size</h2>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+
+                    <div class="size-main">
+                        <div class="size-1">
+                            <div>
+                                <p>XX-Small</p>
+                            </div>
+                            <div>
+                                <p>X-Small</p>
+                            </div>
+                        </div>
+
+                        <div class="size-2">
+                            <div>
+                                <p>Small</p>
+                            </div>
+                            <div>
+                                <p>Medium</p>
+                            </div>
+                        </div>
+
+                        <div class="size-3">
+                            <div>
+                                <p>Large</p>
+                            </div>
+                            <div>
+                                <p>X-Large</p>
+                            </div>
+                        </div>
+
+                        <div class="size-4">
+                            <div>
+                                <p>XX-Large</p>
+                            </div>
+                            <div>
+                                <p>3X-Large</p>
+                            </div>
+                        </div>
+
+                        <div class="size-5">
+                            <div>
+                                <p>4X-Large</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dress-title">
+                        <h2 class="dress-name">Dress Style</h2>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <div class="dress-main">
+                        <div class="casual-title">
+                            <h2 class="casual-name">Casual</h2>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+
+                        <div class="formal-title">
+                            <h2 class="formal-name">Formal</h2>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+
+                        <div class="party-title">
+                            <h2 class="party-name">Party</h2>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+
+                        <div class="gym-title">
+                            <h2 class="gym-name">Gym</h2>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <button class="filter-btn">
+                        Apply Filter
+                    </button>
+                </div>
+            </div>
+
+
+            <i id="bar" class="fa-solid fa-bars"></i>
+            <div id="sidebar">
+                <i id="close-sidebar" class="fa-solid fa-x"></i>
+
+                <ul class="sidebar-nav">
+                    <li><a href="../product page/product.html">Shop</a></li>
+                    <li><a href="./category.html">On Sale</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                </ul>
+            </div>
+
+            <p class="header-title"><a style="
+            text-decoration: none;
+            color: black;
+        " href="../index.html">SHOP.CO</a></p>
+
+            <nav>
+                <ul>
+                    <li><a href="./product page/product.html">Shop</a></li>
+                    <li><a href="./category.html">On Sale</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Brands</a></li>
+                </ul>
+            </nav>
+
+            <form>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search for products...">
+
+            </form>
+
+            <div style="margin-left: 40px; display: flex;
+            gap: 14px;" class="icons-header">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-regular fa-circle-user"></i>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-filter">
+                    <div class="hero-title">
+                        <h2 class="filter-name">Filters</h2>
+                        <i class="fa-solid fa-up-down"></i>
+                    </div>
+
+                    <div class="t-shorts-title">
+                        <h2 class="t-shorts-name">T-shirts</h2>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <div class="Shorts-title">
+                        <h2 class="Shorts-name">Shorts</h2>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <div class="Shirts-title">
+                        <h2 class="Shirts-name">Shirts</h2>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <div class="Hoodie-title">
+                        <h2 class="Hoodie-name">Hoodie</h2>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <div class="Jeans-title">
+                        <h2 class="Jeans-name">Jeans</h2>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <div class="Price-title">
+                        <h2 class="Price-name">Price</h2>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+
+                    <div class="price-slider">
+                        <div class="track"></div>
+                        <div class="range"></div>
+
+                        <div class="thumb left"></div>
+                        <div class="thumb right"></div>
+
+                        <div class="prices">
+                            <span>$50</span>
+                            <span>$200</span>
+                        </div>
+                    </div>
+
+                    <div class="colors-title">
+                        <h2 class="colors-name">Colors</h2>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+
+                    <div class="colors-main">
+                        <div class="colors-1">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+
+                        <div class="colors-2">
+                            <div><i class="fa-solid fa-check"></i></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div class="size-title">
+                        <h2 class="size-name">Size</h2>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+
+                    <div class="size-main">
+                        <div class="size-1">
+                            <div>
+                                <p>XX-Small</p>
+                            </div>
+                            <div>
+                                <p>X-Small</p>
+                            </div>
+                        </div>
+
+                        <div class="size-2">
+                            <div>
+                                <p>Small</p>
+                            </div>
+                            <div>
+                                <p>Medium</p>
+                            </div>
+                        </div>
+
+                        <div class="size-3">
+                            <div>
+                                <p>Large</p>
+                            </div>
+                            <div>
+                                <p>X-Large</p>
+                            </div>
+                        </div>
+
+                        <div class="size-4">
+                            <div>
+                                <p>XX-Large</p>
+                            </div>
+                            <div>
+                                <p>3X-Large</p>
+                            </div>
+                        </div>
+
+                        <div class="size-5">
+                            <div>
+                                <p>4X-Large</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dress-title">
+                        <h2 class="dress-name">Dress Style</h2>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <div class="dress-main">
+                        <div class="casual-title">
+                            <h2 class="casual-name">Casual</h2>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+
+                        <div class="formal-title">
+                            <h2 class="formal-name">Formal</h2>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+
+                        <div class="party-title">
+                            <h2 class="party-name">Party</h2>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+
+                        <div class="gym-title">
+                            <h2 class="gym-name">Gym</h2>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <button class="filter-btn">
+                        Apply Filter
+                    </button>
+                </div>
+
+                <div class="hero-main">
+                    <div>
+                        <h1 class="hero-main-title">Casual</h1>
+                        <p class="sort-hero">Showing 1-10 of 100 Products</p>
+                        <p class="sort-by">Sort by:
+                        <p id="sort-by-2" style="color: black;
+                font-size: 16px;
+                font-weight: 400;
+                margin-left: 12px;
+                margin-top: 10px;
+                font-family: Satoshi;">Most Popular</p>
+                        </p>
+                        <div id="icon-main">
+                            <i class="fa-solid fa-up-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="hero-row-1">
+                        <div class="hero-box">
+                            <img src="./imgs/hero-img-1.png" alt="">
+                            <p class="hero-box-title">Gradient Graphic T-shirt</p>
+                            <img class="hero-star" src="./imgs/hero-star.png" alt="">
+                            <p class="hero-box-price">$145</p>
+                        </div>
+
+                        <div class="hero-box">
+                            <img src="./imgs/hero-img-2.png" alt="">
+                            <p class="hero-box-title">Polo with Tipping Details</p>
+                            <img class="hero-star" src="./imgs/hero-star.png" alt="">
+                            <p class="hero-box-price">$180</p>
+                        </div>
+
+                        <div class="hero-box">
+                            <img src="./imgs/hero-img-3.png" alt="">
+                            <p class="hero-box-title">Black Striped T-shirt</p>
+                            <img class="hero-star" src="./imgs/hero-star.png" alt="">
+                            <p class="hero-box-price">$120</p>
+                        </div>
+                    </div>
+
+                    <div class="hero-row-2">
+                        <div class="hero-box">
+                            <img src="./imgs/hero-img-4.png" alt="">
+                            <p class="hero-box-title">Skinny Fit Jeans</p>
+                            <img class="hero-star" src="./imgs/hero-star.png" alt="">
+                            <p class="hero-box-price">$240</p>
+                        </div>
+
+                        <div class="hero-box">
+                            <img src="./imgs/hero-img-5.png" alt="">
+                            <p class="hero-box-title">Checkered Shirt</p>
+                            <img class="hero-star" src="./imgs/hero-star.png" alt="">
+                            <p class="hero-box-price">$180</p>
+                        </div>
+
+                        <div class="hero-box">
+                            <img src="./imgs/hero-img-6.png" alt="">
+                            <p class="hero-box-title">Sleeve Stripped T-shirt</p>
+                            <img class="hero-star" src="./imgs/hero-star.png" alt="">
+                            <p class="hero-box-price">$130</p>
+                        </div>
+                    </div>
+
+                    <div class="hero-row-3">
+                        <div class="hero-box">
+                            <img src="./imgs/hero-img-7.png" alt="">
+                            <p class="hero-box-title">VERTICAL STRIPED SHIRT</p>
+                            <img class="hero-star" src="./imgs/hero-star.png" alt="">
+                            <p class="hero-box-price">$212</p>
+                        </div>
+
+                        <div class="hero-box">
+                            <img src="./imgs/hero-img-8.png" alt="">
+                            <p class="hero-box-title">Courage graphic shirt</p>
+                            <img class="hero-star" src="./imgs/hero-star.png" alt="">
+                            <p class="hero-box-price">$145</p>
+                        </div>
+
+                        <div class="hero-box">
+                            <img src="./imgs/hero-img-9.png" alt="">
+                            <p class="hero-box-title">Black Striped T-shirt</p>
+                            <img class="hero-star" src="./imgs/hero-star.png" alt="">
+                            <p class="hero-box-price">$80</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="log-in">
+            <div class="log-in__desc">
+                <p class="log-in-title">STAY UPTO DATE ABOUT OUR LATEST OFFERS</p>
+            </div>
+            <div class="log-in-form">
+                <form>
+                    <input id="email-input" type="email" placeholder="Enter your email address">
+                    <button class="log-in-btn">Subscribe to Newsletter</button>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-1">
+                <h1 class="footer-title">
+                    SHOP.CO
+                </h1>
+                <p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+                <div style="display: flex;">
+                    <i id="icon-footer" class="fa-brands fa-twitter"></i>
+                    <i id="icon-footer" class="fa-brands fa-facebook"></i>
+                    <i id="icon-footer" class="fa-brands fa-square-instagram"></i>
+                    <i id="icon-footer" class="fa-brands fa-github"></i>
+                </div>
+
+            </div>
+
+            <div class="footer-2">
+                <h3>COMPANY</h3>
+                <p>About</p>
+                <p>Features</p>
+                <p>Works</p>
+                <p>Career</p>
+            </div>
+
+            <div class="footer-3">
+                <h3>HELP</h3>
+                <p>Customer Support</p>
+                <p>Delivery Details</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+            </div>
+
+            <div class="footer-4">
+                <h3>FAQ</h3>
+                <p>Account</p>
+                <p>manage Deliveries</p>
+                <p>Orders</p>
+                <p>Payments</p>
+            </div>
+
+            <div class="footer-5">
+                <h3>RECOURCES</h3>
+                <p>Free eBooks</p>
+                <p>Development Tutorial</p>
+                <p>How to - Blog</p>
+                <p>YouTube Playlist</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="./category.js"></script>
+</body>
+
+</html>
