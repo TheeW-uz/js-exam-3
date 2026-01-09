@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cart.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="discount">
+            <p class="discount-desc">Sign up and get 20% off to your first order. <span style="
+                font-size: 14px;
+                font-family: Satoshi;
+                font-weight: 400;
+                text-decoration: underline;
+                opacity: 1;
+                margin-left: 5px;
+                ">Sign Up Now</span></p>
+
+            <i class="fa-solid fa-x" style="color: white;" id="goProfile"></i>
+        </div>
+
+        <header>
+            <i id="bar" class="fa-solid fa-bars"></i>
+            <div id="sidebar">
+                <i id="close-sidebar" class="fa-solid fa-x"></i>
+
+                <ul class="sidebar-nav">
+                    <li><a href="../product page/product.html">Shop</a></li>
+                    <li><a href="../category page/category.html">On Sale</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                </ul>
+            </div>
+
+            <p class="header-title"><a style="
+            text-decoration: none;
+            color: black;
+        " href="../index.html">SHOP.CO</a></p>
+
+            <nav>
+                <ul>
+                    <li><a href="../product page/product.html">Shop</a></li>
+                    <li><a href="../category page/category.html">On Sale</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="./cart.html">Cart</a></li>
+                </ul>
+            </nav>
+
+            <form>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search for products...">
+
+            </form>
+
+            <div style="margin-left: 40px; display: flex;
+            gap: 14px;" class="icons-header">
+                <div class="icons-header">
+                    <i class="fa-solid fa-cart-shopping nav-icon" data-page="./cart.html"></i>
+                    <i class="fa-regular fa-circle-user nav-icon" data-page="./profile.html"></i>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <h1 class="cart-title">YOUR CART</h1>
+            <section class="cart">
+                <div id="cart-main">
+
+                </div>
+
+                <div class="cart-order">
+
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="./cart.js"></script>
+</body>
+
+</html>

@@ -73,6 +73,10 @@ arrivalsData.forEach(item => {
     arrivalsBoxMark.style.marginLeft = "13px";
     arrivalsBoxRates.appendChild(arrivalsBoxMark);
 
+    let arrivalsChain = document.createElement("div")
+    arrivalsBox.appendChild(arrivalsChain)
+    arrivalsChain.style.display = "flex"
+
     let arrivalsBoxPrice = document.createElement("p");
     arrivalsBoxPrice.textContent = item.price;
     arrivalsBoxPrice.style.fontSize = "24px";
@@ -80,8 +84,35 @@ arrivalsData.forEach(item => {
     arrivalsBoxPrice.style.fontFamily = "Satoshi";
     arrivalsBoxPrice.style.color = "#000000";
     arrivalsBoxPrice.style.paddingTop = "8px";
-    arrivalsBox.appendChild(arrivalsBoxPrice);
+    arrivalsChain.appendChild(arrivalsBoxPrice);
 
+    let arrivalsBoxBtn = document.createElement("button")
+    arrivalsChain.appendChild(arrivalsBoxBtn)
+    arrivalsBoxBtn.style.width = "100px"
+    arrivalsBoxBtn.style.height = "32px"
+    arrivalsBoxBtn.style.backgroundColor = "transparent"
+    arrivalsBoxBtn.style.borderRadius = "62px"
+    arrivalsBoxBtn.style.border = "1px solid #000000A1"
+    arrivalsBoxBtn.style.marginTop = "10px"
+    arrivalsBoxBtn.style.marginLeft = "15px"
+    arrivalsBoxBtn.textContent = "Add To Cart"
+    arrivalsBoxBtn.style.cursor = "pointer"
+
+    arrivalsBoxBtn.addEventListener("click", () => {
+        const product = {
+            img: item.img,
+            title: item.title,
+            price: item.price
+        };
+
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        cart.push(product);
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        alert(`${item.title} added to cart!`);
+    });
 });
 
 

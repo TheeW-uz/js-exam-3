@@ -1,0 +1,252 @@
+@font-face {
+    font-family: "Satoshi";
+    src: url(../fonts/satoshi-webfont/Satoshi-Regular.woff);
+}
+
+@font-face {
+    font-family: "Integral";
+    src: url(../fonts/Integral-CF/Demo_Fonts/Fontspring-DEMO-integralcf-regular.otf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.discount {
+    width: 100%;
+    height: 38px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+
+    .discount-desc {
+        font-size: 14px;
+        font-weight: 400;
+        font-family: Satoshi;
+        color: white;
+        margin-left: 540px;
+    }
+
+    i {
+        margin-left: 420px;
+        cursor: pointer;
+    }
+}
+
+header {
+    width: 100%;
+    height: 96px;
+    display: flex;
+    align-items: center;
+
+    .header-title {
+        font-size: 32px;
+        font-weight: 700;
+        font-family: Integral;
+        margin-left: 100px;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            margin-left: 40px;
+            gap: 25px;
+            margin-top: 5px;
+
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-family: Satoshi;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    form {
+        width: 577px;
+        height: 48px;
+        margin-left: 40px;
+        border-radius: 62px;
+        background-color: #F0F0F0;
+        display: flex;
+        align-items: center;
+
+        i {
+            margin-left: 16px;
+            color: #00000066;
+        }
+
+        input {
+            border: none;
+            outline: none;
+            background-color: #F0F0F0;
+            padding-left: 12px;
+            width: 80%;
+        }
+    }
+}
+
+#bar {
+    display: none;
+}
+
+#sidebar {
+    display: none;
+}
+
+.cart-title {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Integral;
+    color: black;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.cart {
+    display: flex;
+
+    #cart-main {
+        width: 715px;
+        height: 508px;
+        margin-left: 100px;
+        margin-top: 24px;
+        border: 1px solid #0000001A;
+        border-radius: 20px;
+    }
+
+    .cart-order {
+        width: 505px;
+        height: 458px;
+        margin-top: 24px;
+        margin-left: 20px;
+        border: 1px solid #0000001A;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 390px) {
+    * {
+        box-sizing: border-box;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .container {
+        max-width: 390px;
+        width: 100%;
+    }
+
+    .discount {
+        width: 390px;
+        height: 34px;
+        padding-left: 12px !important;
+        font-size: 12px !important;
+    }
+
+    i {
+        margin-left: 10px;
+    }
+
+    header {
+        width: 100% !important;
+        height: 64px;
+        background-color: white;
+    }
+
+    #bar {
+        margin-left: 16px !important;
+    }
+
+    nav {
+        display: none !important;
+    }
+
+    form {
+        display: none !important;
+    }
+
+    .header-title {
+        margin-left: 16px !important;
+    }
+
+    .icons-header {
+        margin-left: 100px !important;
+    }
+
+    #bar {
+        display: flex;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    #sidebar {
+        position: fixed;
+        top: 0;
+        left: -260px;
+        width: 260px;
+        height: 100vh;
+        background-color: #ffffff;
+        z-index: 9999;
+        transition: left 0.3s ease;
+        padding: 20px;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
+        display: block;
+    }
+
+    #sidebar.active {
+        left: 0;
+    }
+
+    #close-sidebar {
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .sidebar-nav {
+        list-style: none;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sidebar-nav a {
+        text-decoration: none;
+        font-family: Satoshi;
+        font-size: 18px;
+        color: black;
+    }
+}
+
+@media (max-width: 768px) {
+    #bar {
+        display: flex;
+    }
+
+    nav {
+        display: none !important;
+    }
+
+    input {
+        display: none;
+    }
+}
