@@ -1,4 +1,3 @@
-// ===== CART.JS =====
 const cartContainer = document.getElementById("cart-main");
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -32,7 +31,6 @@ function renderCart() {
             <button class="remove-btn" style="margin-left:16px;">✖</button>
         `;
 
-        // + / − buttons
         const minus = div.querySelector(".minus");
         const plus = div.querySelector(".plus");
 
@@ -42,10 +40,8 @@ function renderCart() {
 
         plus.addEventListener("click", () => { item.qty++; updateCart(); });
 
-        // disable minus at qty 1
         if (item.qty === 1) { minus.disabled = true; minus.style.backgroundColor = "#999"; minus.style.cursor = "not-allowed"; }
 
-        // remove button
         div.querySelector(".remove-btn").addEventListener("click", () => {
             cart.splice(index, 1);
             updateCart();
@@ -60,7 +56,6 @@ function updateCart() {
     renderCart();
 }
 
-// ===== SIDEBAR LOGIC =====
 const bar = document.getElementById("bar");
 const sidebar = document.getElementById("sidebar");
 const closeSidebar = document.getElementById("close-sidebar");

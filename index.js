@@ -1,6 +1,3 @@
-// ===== HOME.JS =====
-
-// ===== ARRIVALS & SELLING SETUP =====
 let arrivalsContainer = document.getElementById("arrivals-container");
 arrivalsContainer.innerHTML = "";
 arrivalsContainer.style.marginTop = "55px";
@@ -29,7 +26,6 @@ const sellingData = [
     { img: "./imgs/selling-img-4.png", title: "Faded Skinny Jeans", rating: "4.5/5", price: "$210" }
 ];
 
-// ===== GENERIC FUNCTION TO RENDER PRODUCTS =====
 function renderProducts(container, data) {
     container.innerHTML = "";
     data.forEach(item => {
@@ -39,21 +35,18 @@ function renderProducts(container, data) {
         box.style.flexDirection = "column";
         box.style.width = "300px";
 
-        // IMAGE
         let img = document.createElement("img");
         img.src = item.img;
         img.style.width = "100%";
         img.style.height = "298px";
         box.appendChild(img);
 
-        // TITLE
         let title = document.createElement("p");
         title.textContent = item.title;
         title.style.fontWeight = "bold";
         title.style.fontSize = "20px";
         box.appendChild(title);
 
-        // RATING
         let ratingDiv = document.createElement("div");
         ratingDiv.style.display = "flex";
         ratingDiv.style.alignItems = "center";
@@ -66,7 +59,6 @@ function renderProducts(container, data) {
         ratingDiv.appendChild(ratingText);
         box.appendChild(ratingDiv);
 
-        // PRICE + ADD BUTTON
         let priceChain = document.createElement("div");
         priceChain.style.display = "flex";
         priceChain.style.alignItems = "center";
@@ -85,7 +77,6 @@ function renderProducts(container, data) {
         box.appendChild(priceChain);
         container.appendChild(box);
 
-        // ===== ADD TO CART LOGIC =====
         btn.addEventListener("click", () => {
             let priceNum = parseFloat(item.price.replace(/[^0-9.]/g, ""));
             let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -97,17 +88,15 @@ function renderProducts(container, data) {
 
             cart.push({ img: item.img, title: item.title, price: priceNum, qty: 1 });
             localStorage.setItem("cart", JSON.stringify(cart));
-            renderHomeCart(); // update floating cart
+            renderHomeCart();
             alert("Added to cart");
         });
     });
 }
 
-// RENDER ARRIVALS & SELLING
 renderProducts(arrivalsContainer, arrivalsData);
 renderProducts(sellingContainer, sellingData);
 
-// ===== FLOATING CART SETUP =====
 const homeCart = document.createElement("div");
 homeCart.id = "home-cart";
 homeCart.style.position = "fixed";
@@ -119,7 +108,7 @@ homeCart.style.padding = "10px";
 homeCart.style.boxShadow = "0px 0px 10px rgba(0,0,0,0.2)";
 homeCart.style.maxHeight = "500px";
 homeCart.style.overflowY = "auto";
-homeCart.style.display = "none"; // hidden initially
+homeCart.style.display = "none";
 document.body.appendChild(homeCart);
 
 function renderHomeCart() {
@@ -158,10 +147,8 @@ function renderHomeCart() {
     });
 }
 
-// Initial render
 renderHomeCart();
 
-// ===== MOBILE STYLES =====
 function applyMobileStyles() {
     const isMobile = window.matchMedia("(max-width: 390px)").matches;
     [arrivalsContainer, sellingContainer].forEach(container => {
@@ -194,7 +181,6 @@ function applyMobileStyles() {
 applyMobileStyles();
 window.addEventListener("resize", applyMobileStyles);
 
-// ===== SIDEBAR LOGIC =====
 const bar = document.getElementById("bar");
 const sidebar = document.getElementById("sidebar");
 const closeSidebar = document.getElementById("close-sidebar");
