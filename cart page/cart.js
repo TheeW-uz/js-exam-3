@@ -1,70 +1,76 @@
-function isMobile() {
-    return window.matchMedia("(max-width: 390px)").matches;
-}
+// ===== CART.JS =====
+const cartContainer = document.getElementById("cart-main");
 
-bar.addEventListener("click", () => {
-    if (!isMobile()) return;
-    sidebar.classList.add("active");
-});
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-closeSidebar.addEventListener("click", () => {
-    if (!isMobile()) return;
-    sidebar.classList.remove("active");
-});
-
-document.querySelectorAll(".sidebar-nav a").forEach(link => {
-    link.addEventListener("click", () => {
-        if (!isMobile()) return;
-        sidebar.classList.remove("active");
-    });
-});
-
-
-document.addEventListener("DOMContentLoaded", () => {
-    const cartContainer = document.getElementById("cart-main");
-
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
-
+function renderCart() {
     cartContainer.innerHTML = "";
 
-    if(cart.length === 0) {
-        cartContainer.innerHTML = "<p>Your cart is empty.</p>";
+    if (cart.length === 0) {
+        cartContainer.innerHTML = "<p>Your cart is empty</p>";
         return;
     }
 
-    cart.forEach(item => {
+    cart.forEach((item, index) => {
         const div = document.createElement("div");
+        div.className = "cart-item";
         div.style.display = "flex";
         div.style.alignItems = "center";
-        div.style.gap = "20px";
         div.style.marginBottom = "20px";
-        div.style.border = "1px solid #ccc";
-        div.style.padding = "10px";
-        div.style.borderRadius = "8px";
 
-        const img = document.createElement("img");
-        img.src = item.img;
-        img.width = 100;
-        img.height = 100;
-        img.style.objectFit = "cover";
-        img.style.borderRadius = "8px";
+        div.innerHTML = `
+            <img src="${item.img}" style="width:100px;height:100px;margin-right:16px;">
+            <div>
+                <h4>${item.title}</h4>
+                <p class="item-price">$${(item.price * item.qty).toFixed(2)}</p>
+                <div class="qty-controls">
+                    <button class="minus">−</button>
+                    <span>${item.qty}</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <button class="remove-btn" style="margin-left:16px;">✖</button>
+        `;
 
-        const info = document.createElement("div");
+        // + / − buttons
+        const minus = div.querySelector(".minus");
+        const plus = div.querySelector(".plus");
 
-        const title = document.createElement("h3");
-        title.textContent = item.title;
-        title.style.margin = "0";
+        minus.addEventListener("click", () => {
+            if (item.qty > 1) { item.qty--; updateCart(); }
+        });
 
-        const price = document.createElement("p");
-        price.textContent = item.price;
-        price.style.margin = "5px 0";
+        plus.addEventListener("click", () => { item.qty++; updateCart(); });
 
-        info.appendChild(title);
-        info.appendChild(price);
+        // disable minus at qty 1
+        if (item.qty === 1) { minus.disabled = true; minus.style.backgroundColor = "#999"; minus.style.cursor = "not-allowed"; }
 
-        div.appendChild(img);
-        div.appendChild(info);
+        // remove button
+        div.querySelector(".remove-btn").addEventListener("click", () => {
+            cart.splice(index, 1);
+            updateCart();
+        });
 
         cartContainer.appendChild(div);
     });
+}
+
+function updateCart() {
+    localStorage.setItem("cart", JSON.stringify(cart));
+    renderCart();
+}
+
+// ===== SIDEBAR LOGIC =====
+const bar = document.getElementById("bar");
+const sidebar = document.getElementById("sidebar");
+const closeSidebar = document.getElementById("close-sidebar");
+
+function isMobile() { return window.matchMedia("(max-width: 390px)").matches; }
+
+bar.addEventListener("click", () => { if (!isMobile()) return; sidebar.classList.add("active"); });
+closeSidebar.addEventListener("click", () => { if (!isMobile()) return; sidebar.classList.remove("active"); });
+document.querySelectorAll(".sidebar-nav a").forEach(link => {
+    link.addEventListener("click", () => { if (!isMobile()) return; sidebar.classList.remove("active"); });
 });
+
+renderCart();
